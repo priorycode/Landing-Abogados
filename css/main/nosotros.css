@@ -1,0 +1,80 @@
+.container__nosotros {
+    background: url(../../img/background-nosotros.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    height: 75.9rem;
+    padding-left: 0;
+}
+
+.nosotros__info {
+    padding-top: 6.2rem;
+}
+
+.title {
+    font-family: var(--font-philosopher);
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: var(--bold);
+    line-height: normal;
+    margin-bottom: 5rem;
+
+    background: rgb(135, 231, 173);
+    background: linear-gradient(360deg, rgba(135, 231, 173, 1) 0%, rgba(31, 86, 95, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info__subtitle{
+    margin-bottom: 5rem;
+}
+.info__subtitle p{
+    width: 100%;
+}
+
+.subtitle {
+    width: fit-content;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.subtitle h3 {
+    font-family: var(--font-taviraj);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: var(--bold);
+    line-height: normal;    
+    margin-bottom: 2rem;
+}
+
+
+
+.subtitle .svg2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.subtitle .svg1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@media screen and (min-width: 750px) {
+    .nosotros__info{
+        padding-top: 9rem;
+    }
+    .info__subtitle p{
+        max-width: 58.4rem;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .nosotros__info {
+        padding-top: 11.2rem;
+    }
+    .container__nosotros {
+        height: 80rem;
+        background-position-x: 18rem;
+    }
+}

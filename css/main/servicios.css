@@ -1,0 +1,53 @@
+.servicios__global {
+    background: url(../../img/background-servicios.png);
+    background-size: 84.4rem;
+    background-position-x: 80%;
+    background-repeat: no-repeat;
+    padding-top: 4.8rem;
+}
+
+
+.container__Servicios{
+    margin-bottom: 5rem;
+}
+
+.servicios{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.servicio img{
+    width: 6.3rem;
+}
+
+.subtitle{
+    margin-bottom: 2rem;
+}
+
+.subtitle .subtitle__servicio{
+    margin: 0;
+    font-family: var(--font-philosopher);
+    font-size: 2.4rem;
+    margin: 1rem 0rem;
+}
+
+@media screen and (min-width: 640px) {
+    .servicios__global{
+     background-size: cover;
+     padding-top: 12.8rem;
+     padding-bottom: 12.8rem;
+    }
+    .servicios{
+        flex-direction: row;
+        margin-top: 10rem;
+    }
+ }
+ 

@@ -1,0 +1,157 @@
+.container__empresas {
+    margin-top: 5rem;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.carrucel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.arrow__left {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+}
+
+.arrow__rigth {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    cursor: pointer;
+}
+
+.carrucel .imgs {
+    width: 200%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.imgs .empresas__1 {
+    width: calc(100%/2);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.empresa img {
+    width: 20%;
+}
+
+.puntos {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.line {
+    display: none;
+}
+
+.punto {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #c5c5c5;
+}
+
+.active {
+    background: #fff;
+}
+
+
+@media screen and (min-width: 1040px) {
+
+    .container__empresas {
+        margin-top: 10rem;
+    }
+    .carrucel {
+        overflow: visible;
+        margin-bottom: 13rem;
+    }
+
+    .carrucel .imgs {
+        width: 100%;
+        transform: translateX(0);
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .empresa img {
+        width: 50%;
+    }
+
+    .arrow__left,
+    .arrow__rigth {
+        display: none;
+    }
+
+    .imgs {
+        position: relative;
+    }
+
+    .puntos {
+        display: none;
+    }
+
+    .empresa {
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .imgs .empresas__1 {
+        display: flex;
+        /* grid-template-columns: repeat(3, 1fr); */
+        width: auto;
+        gap: 8rem;
+    }
+
+    .line {
+        display: block;
+        position: absolute;
+        width: 20rem;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .line1 {
+        left: 7.5rem;
+
+    }
+
+    .line2 {
+        left: 29rem;
+    }
+
+    .line3 {
+        right: 29rem;
+    }
+
+    .line4 {
+        right: 7.5rem;
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Philosopher:wght@400;700&family=Taviraj:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --fuente_principal: 'Cinzel', serif;
+    --fuente_secundaria: 'Lora', serif;
+
+    --font-mulish: 'Mulish', sans-serif;
+    --font-philosopher: 'Philosopher', sans-serif;
+    --font-taviraj: 'Taviraj', serif;
+
+    --light: #E9E9EC;
+    --dark: #070612;
+    --accent: #87E7AD;
+    --main: #02152B;
+    --blanco: #fff;
+
+    --nivel1: 320px;
+    --nivel2: 480px;
+    --nivel3: 768px;
+    --nivel4: 1024px;
+    --nivel5: 1200px;
+
+
+    --extraLight: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semiBold: 600;
+    --bold: 700;
+    --extraBold: 800;
+    --black: 900;
+
+}

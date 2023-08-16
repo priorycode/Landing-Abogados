@@ -1,0 +1,98 @@
+.container__equipo {
+    margin-top: 4.8rem;
+}
+
+.equipo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8rem;
+    margin-bottom: 5.6rem;
+}
+
+
+
+.abogado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.abogado img {
+    padding: 0;
+}
+
+
+
+.abogado h3 {
+    color: var(--accent);
+    text-align: center;
+    font-family: var(--font-taviraj);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: var(--bold);
+    line-height: normal;
+}
+
+.abogado p {
+    text-align: center;
+}
+
+.abogado .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.redes a {
+    width: 2.8rem;
+}
+
+.experiencia .item {
+    display: flex;
+    gap: 1rem;
+}
+
+.experiencia .item p:last-child {
+    text-align: left;
+}
+
+.content__subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle__abogado {
+    position: relative;
+    width: fit-content;
+    padding: .5rem 1rem;
+}
+
+.subtitle__abogado .svg2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.subtitle__abogado .svg1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 480px) {
+    .equipo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem;
+        margin-bottom: 6rem;
+    }
+
+    .abogado img {
+        max-width: 38.7rem;
+        max-height: 50rem;
+    }
+    .abogado h3 {
+        font-size: 3rem;
+    }
+}
